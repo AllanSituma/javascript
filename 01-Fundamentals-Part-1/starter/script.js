@@ -140,7 +140,7 @@ const markHigherBMI = bmiMark > bmiJohn;
 console.log(markHigherBMI);
 
 ///////////////////////////////
-*/
+
 
 //Template literals
 
@@ -156,3 +156,56 @@ const allanNew = `I'm ${firstName} ,a ${(year - birthYear)} year OLD ${job}`
 console.log(allanNew)
 
 console.log(`Using backticks for string: ${job} vibes`)
+
+
+/////////////////
+// if/else statements
+
+const amountPaid = 1000
+const clearedLoan = amountPaid >= 5000
+
+if (clearedLoan) {
+    console.log('Farmer cleared loan');
+} else {
+    const pendingAmount = 5000 - amountPaid;
+    console.log(`Farmer hasn't cleared the loan: ${pendingAmount} remaining`);
+}
+
+const daysPastDeadline = 30;
+const daysRenewalCutoff = 14;
+let eligible;
+
+if (daysPastDeadline > daysRenewalCutoff) {
+    eligible = true;
+} else {
+    eligible = false;
+    console.log(eligible)
+}
+
+//Coding challenge 2
+
+const heightMark = 1.88;
+const heightJohn = 1.76;
+const weightMark = 95;
+const weightJohn = 85;
+
+
+const bmiMark = weightMark / (heightMark * heightMark);
+const bmiJohn = weightJohn / (heightJohn * heightJohn);
+console.log(bmiJohn, bmiMark);
+
+//With no template literals
+if (bmiMark > bmiJohn) {
+    console.log("Mark's BMI is greater than John's");
+} else {
+    console.log("John's BMI is greater thann Mark's");
+}
+
+//Using template literals
+if (bmiMark > bmiJohn) {
+    console.log(`Mark's BMI: ${bmiMark} is greater than John's BMI: ${bmiJohn}`);
+} else {
+    console.log(`John's BMI: ${bmiJohn} is greater than Marks BMI: ${bmiMark}`);
+}
+
+*/

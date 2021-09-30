@@ -208,4 +208,80 @@ if (bmiMark > bmiJohn) {
     console.log(`John's BMI: ${bmiJohn} is greater than Marks BMI: ${bmiMark}`);
 }
 
+
+
+
+//Type conversion and coercion
+
+//type conversion
+const signUpYear = '2017';
+const yearsClient = 4;
+console.log(signUpYear + yearsClient)
+//res = 20174
+
+console.log(Number(signUpYear) + yearsClient)
+//res 2021
+
+console.log(Number('Mkulima'))
+//res NaN
+
+//type coercion
+
+console.log('This farmer has a ' + 'Ksh.' + 4000 + ' loan')
+console.log('40' - '30' + 23)
+*/
+
+//Equality Operators
+// === > strict, doesn't perform type coercion
+// == > loose, performs type coercion
+/*
+const loanAmount = 10000;
+const paidAmount = '10000';
+
+//Strict equality operator
+if (loanAmount === 10000) {
+    console.log('Farmer cleared loan');
+}
+
+if (paidAmount === 10000) {
+    console.log('This will not print')
+}
+
+//this will work
+const packagePrice = Number(prompt("What is the farmers package price?"));
+if (packagePrice === 4000) {
+    console.log(typeof packagePrice)
+    console.log("Farmer qualified for draw");
+} else if (packagePrice > 10000) {
+    console.log("Do nothing")
+} else {
+    console.log("Farmer qualified for Tshirt")
+}
+*/
+
+
+/*
+//loose equality operator
+//paidAmount is a string
+if (paidAmount == 10000) {
+    console.log('Farmer cleared loan')
+}
+
+//This will work too even though acreage is a string
+const acreage = prompt("What is the total acreage of the farmer")//string
+if (acreage == 5) {
+    console.log("The farmer qualifies for additional J4a loan")
+} else {
+    console.log("Do nothing")
+}
+*/
+
+// Not equal to operator
+
+/*
+const adminRank = Number(prompt("What is the admin's rank"))
+
+if (adminRank !== 5) {
+    console.log("Cannot approve request")
+}
 */
